@@ -19,8 +19,6 @@ class YoutubeModel {
       this.viewCount,
       this.likeCount,
       this.dislikeCount});
-
-
 }
 
 List<YoutubeModel> youtubeData = [
