@@ -60,7 +60,7 @@ class _VideoDetailState extends State<VideoDetail> {
         ListTile(
           title: Text(widget.detail.title),
           subtitle: Text(widget.detail.viewCount),
-          trailing: Icon(Icons.more_vert),
+          trailing: Icon(Icons.arrow_drop_down),
         ),
         Container(
           padding: const EdgeInsets.all(16.0),
@@ -134,7 +134,8 @@ class _VideoDetailState extends State<VideoDetail> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Text("Up next"),
+          Expanded(child: Text("Up next")),
+          Text("Autoplay"),
           Switch(
             onChanged: (c) {
               print(c);
