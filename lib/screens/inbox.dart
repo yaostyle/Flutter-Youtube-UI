@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_youtube_ui/screens/messages.dart';
+import 'package:flutter_youtube_ui/screens/notifications.dart';
 
 class InboxScreen extends StatelessWidget {
   @override
@@ -25,7 +26,7 @@ class InboxScreen extends StatelessWidget {
             child: TabBarView(
               children: <Widget>[
                 MessagesScreen(),
-                Text("Notifications"),
+                NotificationsScreen(),
               ],
             ),
           )
